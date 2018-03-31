@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- title -->
+    <title>comic-viewer sample</title>
+
+    <!-- css -->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="/css/comic-viewer.css" rel="stylesheet">
+
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="/js/jquery.lazyload.js"></script>
+    <script src="/js/comic-viewer.js"></script>
+    
+    <!-- sample -->
+    <link href="/sample/css/custom.css" rel="stylesheet">
+    
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- header -->
+      <div id="header-comic" class="header-comic">
+        <div class="inner">
+          <!-- logo -->
+          <div class="logo">
+            <h1><a href="/sample/">sample</a></h1>
+          </div>
+
+          <!-- navi -->
+          <div class="navi">
+            <div class="link"><a href="/sample/" >home</a></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- contents -->
+      <div class="contents">
+        <div id="comic-info">
+          <div class="detail">
+            <span id="comic-info-title"></span>
+            <span id="comic-page-no"></span>/<span id="comic-page-all"></span>
+          </div>
+        </div>
+        <div id="comic-viewer" style="display:none;">
+          <div id="comic-left" class="page">
+            <i id="comic-left-button" class="fas fa-arrow-circle-left move-button"></i>
+            <img id="comic-left-page" class="img" src="/images/loading.gif">
+          </div>
+          <div id="comic-right" class="page">
+            <i id="comic-right-button" class="fas fa-arrow-circle-right move-button"></i>
+            <img id="comic-right-page" class="img" src="/images/loading.gif">
+          </div>
+        </div>
+
+        <div id="comic-viewer-sp" style="display:none;">
+        </div>
+
+        <input id="comic-dir-large" type="hidden" name="dir-large" value="/sample/images/large"><!-- large image path -->
+        <input id="comic-dir-small" type="hidden" name="dir-small" value="/sample/images/small"><!-- small image path -->
+        <input id="comic-extension" type="hidden" name="extension" value="jpg"><!-- image extension -->
+        <input id="comic-loading" type="hidden" name="loading" value="/images/loading.gif"><!-- loading image path -->
+        <input id="comic-page-count" type="hidden" name="count" value="10"><!-- page count -->
+        <input id="comic-page-start" type="hidden" name="start" value="l"><!-- l or r (l is left, r is right start) -->
+        <input id="comic-title" type="hidden" name="title" value="esper hunter"><!-- title -->
+
+      </div>
+      <!-- /contents -->
+
+      <!-- footer -->
+      <div id="footer-comic">
+         <p>2018- &copy; tomalatte All Rights Reserved.</p>
+      </div>
+      <!-- /footer -->
+
+    </div>
+  </body>
+</html>

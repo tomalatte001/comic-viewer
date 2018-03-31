@@ -1,0 +1,145 @@
+div.header-comic {
+	padding: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+div.header-comic .inner {
+	clear: both;
+	position: relative;
+	display: table;
+	width: 100%;
+}
+
+div.header-comic .logo {
+	float: left;
+}
+
+div.header-comic h1 {
+	display: inline;
+}
+
+div.header-comic .navi {
+	width: auto;
+	height: auto;
+}
+
+div.header-comic .navi .link {
+	float: right;
+	padding: 0;
+	margin: 0;
+}
+
+div.contents {
+	margin: 0;
+}
+
+div#comic-info {
+	display:none;
+	position: fixed;
+	top: 20px;
+	width: 100%;
+	z-index:10;
+}
+
+div#comic-info div.detail {
+	width: 300px;
+	min-height:30px;
+	border-radius:25px;
+	padding:10px 15px;
+	text-align:center;
+	background-color: #CCCCCC;
+	opacity:0.75;
+	margin: 0 auto;
+}
+
+div#comic-info span {
+	line-height: 30px;
+	vertical-align: middle;
+	font-weight: bold;
+	font-size:140%;
+}
+
+div#comic-viewer {
+	display: none;
+	max-width: 1170px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+div#comic-info span#comic-info-title {
+	padding-right: 15px;
+}
+
+div#comic-info span#comic-page-no {
+	padding-right: 3px;
+}
+
+div#comic-info span#comic-page-all {
+	padding-left: 3px;
+}
+
+div#comic-viewer div.page {
+	position: relative;
+    display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+    align-items: center;
+	width: 50%;
+	height: 100%;
+}
+
+div#comic-viewer div#comic-left {
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: flex-end;
+	float: left;
+}
+
+div#comic-viewer div#comic-right {
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: flex-start;
+	float: right;
+}
+
+div#comic-viewer img.img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+div#comic-viewer i.move-button {
+	display: none;
+	cursor: pointer;
+	position: absolute;
+	font-size: 40px;
+	color: #333333;
+	background-color: #CCCCCC;
+}
+
+div#comic-viewer #comic-left-button {
+	left: 40px;
+}
+
+div#comic-viewer #comic-right-button {
+	right: 40px;
+}
+
+div#comic-viewer-sp {
+	display: none;
+	text-align: center;
+}
+
+div#comic-viewer-sp img {
+	display:block;
+	margin: 0 auto 10px;
+}
+
+div#footer-comic {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
